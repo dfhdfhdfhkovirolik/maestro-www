@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Maestro API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Maestro</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Главная <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#static" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Статическое API
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#countries">Страны</a>
+              <a class="dropdown-item" href="#carriers">ОпСоСы</a>
+              <a class="dropdown-item" href="#tlds">TLDs</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#dynamic" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Динамическое API
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#wasserman">Погода</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#apps">Приложения</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="homepage">
+        <h1>Maestro</h1>
+        <p>Maestro - это УО/рп/-в-АПИ</p>
+    </div>
+    <div id="static">
+        <h1>BasePath: https://maestro-api-static.duckunion.xyz/</h1>
+    </div>
+    <div id="countries">
+        <h2>/countries.json</h2>
+        <p>Все страны</p>
+        <ul>
+          <li><b>name</b> - название страны</li>
+          <li><b>continent</b> - континент</li>
+          <li><b>flag</b> - флаг ( бейс пача пока нет)</li>
+          <li><b>weatherId</b> - ID</li>
+        </ul>
+    </div>
+    <div id="carriers">
+      <h2>/carriers.json</h2>
+      <p>Все ОпСоСы</p>
+      <ul>
+        <li><b>carrierName</b> - название</li>
+        <li><b>logo</b> - лого</li>
+      </ul>
+    </div>
+    <div id="tlds">
+      <h2>/tlds.json</h2>
+      <p>Все TLD</p>
+      <ul>
+        <li><b>tld</b> - название</li>
+        <li><b>registrant</b> - регистрант</li>
+      </ul>
+    </div>
+    <div id="dynamic">
+      <h1>BasePath: http://maestro-api-dynamic.duckunion.xyz</h1>
+    </div>
+    <div id="wasserman">
+      <h1>/weather.json</h1>
+      <h2>Аргументы (QueryString)</h2>
+      <ul>
+        <li><b>e</b> - день (today | yesterday | tomorrow)</li>
+        <li><b>cid</b> - id страны</li>
+      </ul>
+    </div>
+    <div id="apps">
+<h1>Пока нет(</h1>
+    </div>
+    <script src="https://cdn.rawgit.com/thednp/bootstrap.native/master/dist/bootstrap-native-v4.min.js"></script>
+    </body>
+</html>
